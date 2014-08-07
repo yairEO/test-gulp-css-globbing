@@ -11,7 +11,7 @@ var gulp            = require('gulp'),
 
 gulp.task('scss', function () {
 
-    gulp.src('css/dist/main.scss')
+    gulp.src('css/main.scss')
         .pipe(cssGlobbing({ extensions:'.scss' }))
         .pipe(sass({ errLogToConsole: true })) // { style:'expanded' }
         .pipe(cmq())
